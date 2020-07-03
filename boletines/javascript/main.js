@@ -16,7 +16,7 @@ celdas.forEach(function(td){
 
 let elementos = document.querySelectorAll(".close");
 elementos.forEach(function(elemento){
-  elemento.addEventListener('click', function(ev){
+    elemento.addEventListener('click', function(ev){
     ev.preventDefault(); //evita el comportamiento del evento
 
     let content = document.querySelector(".content")
@@ -30,9 +30,6 @@ elementos.forEach(function(elemento){
       location.href="../index.html";
     }, 1000);  // Lo hace una vez
     //setInterval // lo hace constantemente
-
-
-
     return false;
   })
 });
